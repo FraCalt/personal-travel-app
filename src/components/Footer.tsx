@@ -3,8 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer--wrapper">
-        <p>some credits here</p>
-      <img className="footer--img" src="images/logo512.png" />
+      <p>© No Commercial Purpose. I do not own the graphics used on this site</p>
     </div>
   );
 };

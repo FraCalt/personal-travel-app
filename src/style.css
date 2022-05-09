@@ -1,14 +1,18 @@
-* {
-  color: rgb(0, 0, 0);
-}
 body {
   margin: 0px auto;
+  font-family: "Droid Sans";
+  font-size: 15px;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-image: url("/public/images/watermark-wallpaper.png");
+  background-size: cover;
+  background-position: center;
 }
+
 .header--wrapper {
   margin: 5px 5px;
   background-color: rgb(235, 128, 114);
@@ -18,8 +22,14 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 .header--img {
   width: 40px;
+  margin-right: 10px;
+}
+
+.header--wrapper > h2 {
+  text-shadow: 1px 1px 10px rgb(255, 0, 0);
 }
 
 .card--wrapper {
@@ -31,22 +41,59 @@ body {
   max-width: 1200px;
   min-width: 400px;
   border: 2px solid rgb(211, 211, 211);
+  background-color: rgba(240, 248, 255, 0.874);
   border-radius: 10px;
   padding: 10px 20px;
 }
+
 .card--image {
   height: 250px;
   width: 200px;
   margin: 5px;
   border-radius: 10px;
 }
+
+.card--info {
+  margin: 0 10px;
+}
+
+.card--info > * {
+  margin: 10px auto;
+}
+.card--info > h4 {
+  color: rgb(179, 35, 179);
+}
+
+.link {
+  text-decoration-line: none;
+  font-weight: 600;
+  font-size: small;
+}
+
+.link:hover {
+  color: green;
+}
+
+.card--position {
+  text-align: center;
+}
+
 .card--description {
+  font-size: 14px;
   max-width: 500px;
   min-width: 200px;
 }
+
+.card--date {
+  font-size: small;
+}
 .hero--section {
-  margin: 0 auto;
-  border: solid 3px green;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  padding: 5px;
+  border: 2px solid rgb(211, 211, 211);
+  border-radius: 10px;
   max-width: 100%;
   min-width: 400px;
   overflow-y: scroll;
@@ -54,7 +101,6 @@ body {
 
 .footer--wrapper {
   background-color: rgb(235, 128, 114);
-
   margin: 5px 5px;
   margin-top: auto;
   justify-content: center;
@@ -62,7 +108,5 @@ body {
   align-items: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-}
-.footer--img {
-  width: 40px;
+  font-size: smaller;
 }
